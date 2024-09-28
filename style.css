@@ -6,14 +6,30 @@ body{
     background-size: contain;
 }
 
-header{
+.header{
+    background-color: #ffffff;
+    color: black;
     display: flex;
-    justify-content: center;
-    padding: 2%;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding: 20px 50px 50px ;
+    margin: 10px 20px 50px;
+    font-size: 20px;
     justify-content: space-between;
 
 }
+
+nav{
+    display: flex;
     
+}   
+
+nav ul li{
+    list-style: none;
+    margin-right: 20px;
+    display: inline;
+    justify-content: space-between;
+}
 
 
 .search-bar-container{
@@ -101,9 +117,24 @@ header{
 
 .icons{
     position: relative;
-    bottom: -300px;
+    bottom: -200px;
     font-size: 20px;
 }
 
 
-  
+@media screen and (max-width: 600px) {
+    .header{
+        display: flex;
+        justify-content: center;
+    }
+    .container1{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    
+}  
+
+@media screen and (min-width: 601px) {
+    
+}
